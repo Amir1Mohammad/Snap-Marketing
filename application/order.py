@@ -32,8 +32,6 @@ def see_orders(locate_source):
     return jsonify(jsonify=listme)
 
 
-# fixme
-# TODO when the orders is finished . change the status to 0 and new end_at time .
 @app.route('/ao/<source_id>/<locate_source>/<orders>/<status>', methods=['GET', 'POST'])
 def add_order(source_id, locate_source, orders, status):
     o = Order(id=create_id_order(), source_id=source_id, locate_source=locate_source, orders=orders,
