@@ -2,7 +2,7 @@ flask==0.10
 flask-cache==0.13.1
 flask-script==2.0.5
 flask-wtf==0.14.2
-Flask-SQLAlchemy==2.1
+Flask-SQLAlchemy==1.0
 jinja2==2.7
 flasgger==0.5.12
 wtforms==2.1
