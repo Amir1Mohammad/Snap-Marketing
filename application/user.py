@@ -2,9 +2,12 @@
 # -*- coding: utf-8 -*-
 # find . -name "*.pyc" -exec rm -rf {} \;
 
+# Python import:
+from flask_login import LoginManager
+
 __Author__ = "Amir Mohammad"
 
-# project import :
+# Project import :
 from application import app
 from models.user import User
 from models.base import db
@@ -23,6 +26,7 @@ def signup(email, passwordhash, firstname, lastname, gender, birth_date, phones)
     ''',200
 
 
+
 @app.route('/login/<username>/<passwordhash>', methods=['GET', 'POST'])
 def login():
     pass
@@ -31,10 +35,12 @@ def login():
 def google_oauth_callback():
     pass
 
-
+@app.route("/logout/<username>")
 def logout():
     pass
 
 
 def forget_password():
     pass
+
+

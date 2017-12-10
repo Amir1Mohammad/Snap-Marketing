@@ -4,6 +4,7 @@
 
 # python import:
 import bcrypt
+
 __Author__ = "Amir Mohammad"
 
 
@@ -36,12 +37,14 @@ def get_hash(password):
     return hashed
 
 
-def check_hash(password,hashed):
+def check_hash(password, hashed):
     if bcrypt.checkpw(password, hashed):
         print("It Matches!")
     else:
         print("It Does not Match :(")
 
+
 # simple Calling function
 # avr = get_hash('amir mohammad mohammadi')
 # check_hash('amir mohammad mohammadi',avr)
+

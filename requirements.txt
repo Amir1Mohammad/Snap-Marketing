@@ -1,6 +1,7 @@
 flask==0.10
 flask-cache==0.13.1
 flask-script==2.0.5
+flask-login
 flask-celery-helper==1.1.0
 flask-wtf==0.14.2
 Flask-SQLAlchemy==1.0

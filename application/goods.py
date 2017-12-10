@@ -36,7 +36,6 @@ def add_goods(name, category, property, cost):
     g = Good(id=create_id_good(), name=name, category=category, property=property, cost=cost)
     db.session.add(g)
     db.session.commit()
-
     return '''
             <h3>Good added Completely ... </h3>
     '''

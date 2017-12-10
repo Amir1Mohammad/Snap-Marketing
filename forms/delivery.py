@@ -12,8 +12,8 @@ from wtforms.validators import Required
 
 
 class DeliveryMan(Form):
-    firstname = StringField('What is your first name?', validators=[Required()])
-    lastname = StringField('What is your first name?', validators=[Required()])
+    # firstname = StringField('What is your first name?', validators=[Required()])
+    # lastname = StringField('What is your first name?', validators=[Required()])
     # address
     # phone
     # mobile
