@@ -33,8 +33,14 @@ def see_goods():
 
 @app.route('/ag/<name>/<category>/<property>/<cost>', methods=['GET', 'POST'])
 def add_goods(name, category, property, cost):
-    g = Good(id=create_id_good(), name=name, category=category, property=property, cost=cost)
+    g = Good(id=create_id_good(), name=name, category=category, property=property, cost=int(cost))
     db.session.add(g)
+    print "========================================"
+    print type(id),type(name),type(property),type(cost)
+    print id
+    print name
+    print property
+    print cost
     db.session.commit()
     return '''
             <h3>Good added Completely ... </h3>

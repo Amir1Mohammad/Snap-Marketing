@@ -13,7 +13,7 @@ from models.base import db
 def accept_order(id):
     from models.order import Order
     s = Order.query.filter_by(id=id).first()
-    s.status = 1
+    s.status = 0
     db.session.commit()
     return '''
     <h3> Status state is changed ...</h3>
