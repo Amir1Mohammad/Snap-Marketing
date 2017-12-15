@@ -20,7 +20,6 @@ def drop():
 
 @manager.command
 def create():
-
     db.create_all()
 
 

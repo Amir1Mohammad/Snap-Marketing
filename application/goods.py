@@ -11,7 +11,7 @@ from flask import jsonify
 from application import app
 from models.goods import Good
 from models.base import db
-from handling import create_id_good
+from garbage import create_id_good
 
 
 @app.route('/sg', methods=['GET'])
@@ -35,12 +35,6 @@ def see_goods():
 def add_goods(name, category, property, cost):
     g = Good(id=create_id_good(), name=name, category=category, property=property, cost=int(cost))
     db.session.add(g)
-    print "========================================"
-    print type(id),type(name),type(property),type(cost)
-    print id
-    print name
-    print property
-    print cost
     db.session.commit()
     return '''
             <h3>Good added Completely ... </h3>
