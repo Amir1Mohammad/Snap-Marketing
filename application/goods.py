@@ -10,7 +10,7 @@ from flask import jsonify
 # project import :
 from application import app
 from models.goods import Good
-from models.base import db
+from application.extension import db
 from garbage import create_id_good
 
 

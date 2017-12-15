@@ -10,8 +10,8 @@ __Author__ = "Amir Mohammad"
 # Project import :
 from application import app
 from models.user import User
-from models.base import db
-from handling import create_id_user
+from application.extension import db
+from garbage import create_id_user
 
 
 @app.route('/su/<email>/<passwordhash>/<firstname>/<lastname>/<gender>/<birth_date>/<phones>',

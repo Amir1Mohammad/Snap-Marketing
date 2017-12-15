@@ -3,7 +3,7 @@
 
 # imports
 from datetime import datetime
-from base import db
+from application.extension import db
 
 __author__ = 'Amir Mohammad'
 

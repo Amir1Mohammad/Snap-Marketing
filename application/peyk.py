@@ -6,7 +6,7 @@ __Author__ = "Amir Mohammad"
 
 # project import:
 from application import app
-from models.base import db
+from application.extension import db
 
 
 @app.route('/accept/<id>', methods=['POST','GET'])

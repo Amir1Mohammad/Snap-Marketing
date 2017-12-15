@@ -4,7 +4,7 @@
 from datetime import datetime
 
 # project import
-from base import db
+from application.extension import db
 
 __author__ = 'Amir Mohammad'
 
