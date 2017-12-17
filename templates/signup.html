@@ -1,10 +1,518 @@
+﻿
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+<meta charset="utf-8">
+<title>Smart Bazaar an E-commerce Online Shopping Category Flat Bootstrap Responsive Website Template | Sign Up :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="fa" />
+<meta name="keywords" content="Smart Bazaar Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<!-- Custom Theme files -->
+<link href="css.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" /> 
+<link href="css/animate.min.css" rel="stylesheet" type="text/css" media="all" /><!-- animation -->
+<link href="css/menu.css" rel="stylesheet" type="text/css" media="all" /> <!-- menu style -->  
+<!-- //Custom Theme files -->
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+<!-- js -->
+<script src="js/jquery-2.2.3.min.js"></script> 
+    <script src="sign.js"></script> 
+<script src="js/jquery-scrolltofixed-min.js" type="text/javascript"></script><!-- fixed nav js -->
+<script>
+    $(document).ready(function() {
+
+        // Dock the header to the top of the window when scrolled past the banner. This is the default behaviour.
+
+        $('.header-two').scrollToFixed();  
+        // previous summary up the page.
+
+        var summaries = $('.summary');
+        summaries.each(function(i) {
+            var summary = $(summaries[i]);
+            var next = summaries[i + 1];
+
+            summary.scrollToFixed({
+                marginTop: $('.header-two').outerHeight(true) + 10, 
+                zIndex: 999
+            });
+        });
+    });
+</script>
+<!-- //js --> 
+<!-- web-fonts -->
+<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Lovers+Quarrel' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Offside' rel='stylesheet' type='text/css'> 
+<!-- web-fonts -->  
+<!-- start-smooth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>	
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script>
+<!-- //end-smooth-scrolling -->
+<!-- smooth-scrolling-of-move-up -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<!-- //smooth-scrolling-of-move-up -->
 </head>
 <body>
+	<!-- header -->
+   
+        <div class="header">
+            <div class="w3ls-header">
+                <!--header-one-->
+                <div class="w3ls-header-right">
+                    <ul>
+                        <li class="dropdown head-dpdn">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i> My Account<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="login.html">Login </a></li>
+                                <li><a href="signup.html">Sign Up</a></li>
+                                <li><a href="login.html">My Orders</a></li>
+                                <li><a href="login.html">delivery man</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown head-dpdn">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-percent" aria-hidden="true"></i> Today's Deals<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="offers.html">Cash Back Offers</a></li>
+                                <li><a href="offers.html">Product Discounts</a></li>
+                                <li><a href="offers.html">Special Offers</a></li>
+                            </ul>
+                        </li>
+                 
+                        <li class="dropdown head-dpdn">
+                            <a href="contact.html" class="dropdown-toggle"><i class="fa fa-map-marker" aria-hidden="true"></i> Store Finder</a>
+                        </li>
+                        <li class="dropdown head-dpdn">
+                            <a href="help.html" class="dropdown-toggle"><i class="fa fa-question-circle" aria-hidden="true"></i> Help</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="header-two">
+                <!-- header-two -->
+                <div class="container">
+                    <div class="header-logo">
+                        <h1><a href="index.html"><span>Snap market</span></a></h1>
 
+                    </div>
+                    <div class="header-cart">
+                        <div class="my-account">
+                            <a href="contact.html"><i class="fa fa-map-marker" aria-hidden="true"></i> ارتباط با ما</a>
+                        </div>
+                        <div class="cart">
+                            <form action="#" method="post" class="last">
+                                <input type="hidden" name="cmd" value="_cart" />
+                                <input type="hidden" name="display" value="1" />
+                                <button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+                            </form>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div><!-- //header-two -->
+            <div class="header-three">
+                <!-- header-three -->
+                <div class="container">
+                    <div class="menu">
+                        <div class="cd-dropdown-wrapper">
+                            <a class="cd-dropdown-trigger" href="#0">اسنپ مارکت</a>
+                            <nav class="cd-dropdown">
+                                <a href="#0" class="cd-close">Close</a>
+                                    <li><a href="sitemap.html">Full Site Directory </a></li>
+                            </nav> <!-- .cd-dropdown -->
+                        </div> <!-- .cd-dropdown-wrapper -->
+                    </div>
+                    <div class="move-text">
+                        <div class="marquee"><a href="offers.html">با ما باشید <span>تخفیف ها |جدیدها </span> <span> با بهترین سریع ترین و         راحت ترین روش خرید کنید</span></a></div>
+                        <script type="text/javascript" src="js/jquery.marquee.min.js"></script>
+                        <script>
+                            $('.marquee').marquee({ pauseOnHover: true });
+                            //@ sourceURL=pen.js
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //header -->
+        <!-- sign up-page -->
+        <div class="login-page">
+            <div class="container">
+ 
+                    <form class="well form-horizontal" action=" " method="post" id="contact_form">
+                        <fieldset>
+
+                            <!-- Form Name -->
+                            <div class="well-header">
+                                <legend>
+                                    <center><h2><b>ثبت نام پیک</b></h2></center>
+
+                                    <center><img src="http://www.kisanpoint.com/mrb/includes/images/design_stuff/default_user_icon.png" class="img-thumbnail img-circle img-responsive" height="80px;" width="80px;"></center>
+                            </div>
+                            </legend><br>
+
+                            <!-- Text input-->
+                          
+                            <div class="margin">
+                                <div class="form-group">
+
+                                    <label class="col-md-4 control-label">نام</label>
+
+                                    <div class="col-md-4 inputGroupContainer">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                            <input name="first_name" placeholder="First Name" class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Text input-->
+
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">نام خانوادگی</label>
+                                    <div class="col-md-4 inputGroupContainer">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                            <input name="last_name" placeholder="Last Name" class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">تلفن ثابت</label>
+                                    <div class="col-md-4 inputGroupContainer">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                            <input name="last_name" placeholder="+21" class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">شماره همراه</label>
+                                    <div class="col-md-4 inputGroupContainer">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                                            <input name="contact_no" placeholder="(09)" class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">شرایط تأهل </label>
+                                    <div class="col-md-4">
+                                        <label>
+                                            مجرد
+                                            <input type="radio" name="taahol" />
+                                        </label>
+                                        <label>
+                                            متأهل
+                                            <input type="radio" name="taahol" />
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">آدرس  </label>
+                                    <div class="col-md-4">
+                                        <textarea class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">تاریخ تولد</label>
+                                    <div class="col-md-4">
+                                        <label for="year_start">Year</label>
+                                        <select id="year_start"
+                                                name="year_start" />
+                                        <option>1357</option>
+                                        <option>1358</option>
+                                        <option>1359</option>
+                                        <option>1360</option>
+                                        <option>1361</option>
+                                        <option>1362</option>
+                                        <option>1363</option>
+                                        <option>1364</option>
+                                        <option>1365</option>
+                                        <option>1366</option>
+                                        </select>
+                                        <label for="month_start">Month</label>
+                                        <select id="month_start"
+                                                name="month_start" />
+                                        <option>فروردین</option>
+                                        <option>اردیبهشت</option>
+                                        <option>خرداد</option>
+                                        <option>تیر</option>
+                                        <option>مرداد</option>
+                                        <option>شهریور</option>
+                                        <option>مهر</option>
+                                        <option>آبان</option>
+                                        <option>آذر</option>
+                                        <option>دی</option>
+                                        <option>بهمن</option>
+                                        <option>اسفند</option>
+                                        </select>
+                                        <label for="day_start">Day</label>
+                                        <select id="day_start"
+                                                name="day_start" />
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                        <option>13</option>
+                                        <option>14</option>
+                                        <option>15</option>
+                                        <option>16</option>
+                                        <option>17</option>
+                                        <option>18</option>
+                                        <option>19</option>
+                                        <option>20</option>
+                                        <option>21</option>
+                                        <option>22</option>
+                                        <option>23</option>
+                                        <option>24</option>
+                                        <option>25</option>
+                                        <option>26</option>
+                                        <option>27</option>
+                                        <option>28</option>
+                                        <option>29</option>
+                                        <option>30</option>
+                                        <option>31</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">شماره کاربری</label>
+                                    <div class="col-md-4 inputGroupContainer">
+                                        <div class="input-group" >
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                            <input name="last_name" placeholder="user account" class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">راه آشنایی با ما  </label>
+                                    <div class="col-md-4 selectContainer">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                                            <select name="department" class="form-control selectpicker">
+                                                <option value="">Select</option>
+                                                <option>تبلیغات</option>
+                                                <option>وب سایت</option>
+                                                <option>اپلیکیشن</option>
+                                                <option>دوستان</option>
+                                                <option>سایر</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Text input-->
+
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">Username</label>
+                                    <div class="col-md-4 inputGroupContainer">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                            <input name="user_name" placeholder="Username" class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Text input-->
+
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">Password</label>
+                                    <div class="col-md-4 inputGroupContainer">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                            <input name="user_password" placeholder="Password" class="form-control" type="password">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Text input-->
+
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">Confirm Password</label>
+                                    <div class="col-md-4 inputGroupContainer">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                            <input name="confirm_password" placeholder="Confirm Password" class="form-control" type="password">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Text input-->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">E-Mail</label>
+                                    <div class="col-md-4 inputGroupContainer">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                            <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- Text input-->
+
+
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">عکس سوء پیشینه </label>
+                                    <div class="col-md-4">
+                                        <input type='file' onchange="readURL(this);" />
+                                        <img id="profile-img-tag" src="http://placehold.it/180" alt="your image" />
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">image generate1 </label>
+                                    <div class="col-md-4">
+                                        <input type='file' onchange="read(this);" />
+                                        <img id="profile-img-tag2" src="http://placehold.it/180" alt="your image" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">image generate2</label>
+                                    <div class="col-md-4">
+                                        <input type='file' onchange="rreadURL(this);" />
+                                        <img id="profile-img-tag3" src="http://placehold.it/180" alt="your image" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">عکس تمام رخ </label>
+                                    <div class="col-md-4">
+                                        <input type='file' onchange="rrreadURL(this);" />
+                                        <img id="profile-img-tag4" src="http://placehold.it/180" alt="your image" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">عکس کارت ملی </label>
+                                    <div class="col-md-4">
+                                        <input type='file' onchange="rrrreadURL(this);" />
+                                        <img id="profile-img-tag5" src="http://placehold.it/180" alt="your image" />
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">درباره شما </label>
+                                    <div class="col-md-4">
+                                        <textarea class="form-control"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                                    <!-- Select Basic -->
+                                    <!-- Success message -->
+                                    <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Success!.</div>
+
+                                    <!-- Button -->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label"></label>
+                                        <div class="col-md-4">
+                                            <br>
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit" class="btn btn-warning">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT <span class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+                                        </div>
+                                    </div>
+
+                        </fieldset>
+                    </form>
+                </div>
+            </div><!-- /.container -->
+    <div>
+               
+            </div>
+        </div>
+        <!-- //sign up-page -->
+
+        <!-- subscribe -->
+ 
+        <div class="subscribe">
+            <div class="container">
+                <div class="col-md-4 social-icons w3-agile-icons">
+
+                    <ul>
+                        <li><a href="#" class="fa fa-facebook icon facebook"> </a></li>
+                        <li><a href="#" class="fa fa-twitter icon twitter"> </a></li>
+                        <li><a href="#" class="fa fa-google-plus icon googleplus"> </a></li>
+                        <li><a href="#" class="fa fa-dribbble icon dribbble"> </a></li>
+                        <li><a href="#" class="fa fa-rss icon rss"> </a></li>
+                    </ul>
+                    <ul class="apps">
+                        <li><h3> ما app دانلود: </h3> </li>
+                        <li><a href="#" class="fa fa-apple"></a></li>
+                        <li><a href="#" class="fa fa-windows"></a></li>
+                        <li><a href="#" class="fa fa-android"></a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+  
+        <!-- //subscribe -->
+        <!-- cart-js -->
+        <script src="js/minicart.js"></script>
+        <script>
+            w3ls.render();
+
+            w3ls.cart.on('w3sb_checkout', function (evt) {
+                var items, len, i;
+
+                if (this.subtotal() > 0) {
+                    items = this.items();
+
+                    for (i = 0, len = items.length; i < len; i++) {
+                        items[i].set('shipping', 0);
+                        items[i].set('shipping2', 0);
+                    }
+                }
+            });
+        </script>
+        <!-- //cart-js -->
+        <!-- menu js aim -->
+        <script src="js/jquery.menu-aim.js"> </script>
+        <script src="js/main.js"></script> <!-- Resource jQuery -->
+        <!-- //menu js aim -->
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="js/bootstrap.js"></script>
+ 
 </body>
 </html>

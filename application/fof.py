@@ -15,7 +15,5 @@ from application import app
 def page_not_found(e):
     print "url not found , 404"
     return '''
-    <h1>404 Error ...</h1>
-    <h2>The url not found ...</h2>
-    <h3>Check it again . tnx ...</h3>
+    <h1>404 Error ... Page not found</h1>
     ''', 404

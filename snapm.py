@@ -7,10 +7,11 @@ __Author__ = "Amir Mohammad"
 from flask_script import Manager
 from application import app
 
-
 manager = Manager(app)
 from database import manager as database_manager
+
 manager.add_command("database", database_manager)
+
 
 @manager.command
 def run():

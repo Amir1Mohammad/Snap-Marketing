@@ -7,8 +7,6 @@
 
 __Author__ = "Amir Mohammad"
 
-
-
 __author__ = 'Amir Mohammad'
 __url__ = 'test.com'
 __license__ = "GPL 2.0 http://www.gnu.org/licenses/gpl-2.0.html"
@@ -16,7 +14,6 @@ __license__ = "GPL 2.0 http://www.gnu.org/licenses/gpl-2.0.html"
 from flask import url_for, redirect, request
 from suds.client import Client
 from application import app
-
 
 MMERCHANT_ID = 'XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX'  # Required
 ZARINPAL_WEBSERVICE = 'https://www.zarinpal.com/pg/services/WebGate/wsdl'  # Required
@@ -57,3 +54,6 @@ def verify():
     else:
         return 'Transaction failed or canceled by user'
 
+
+def calculate():
+    pass

@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 
+
 # flask imports
 from flask_script import Manager, prompt_bool
 
 # project imports
-from models.base import db
+from application.extension import db
 
 __author__ = 'Amir Mohammad'
 
@@ -20,6 +21,7 @@ def drop():
 
 @manager.command
 def create():
+    """Create all the tables"""
     db.create_all()
 
 
@@ -28,3 +30,10 @@ def recreate():
     """Recreates database tables (same as issuing 'drop' and then 'create')"""
     drop()
     create()
+
+
+@manager.command
+def test():
+    """Use it for test purpose"""
+    pass
+
