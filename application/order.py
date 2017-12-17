@@ -31,7 +31,7 @@ def see_orders(locate_source):
         listme.append(show)
     return jsonify(jsonify=listme)
 
-
+# simple input http://0.0.0.0:8000/ao/123/tehranpars/laptop/1
 @app.route('/ao/<source_id>/<locate_source>/<orders>/<status>', methods=['GET', 'POST'])
 def add_order(source_id, locate_source, orders, status):
     o = Order(id=create_id_order(), source_id=source_id, locate_source=locate_source, orders=orders,
@@ -39,6 +39,6 @@ def add_order(source_id, locate_source, orders, status):
     db.session.add(o)
     db.session.commit()
     return '''
-    <h3>Orders added Completely ... </h3>
+    <h2>Orders added Completely ... </h2>
     '''
 

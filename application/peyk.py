@@ -16,6 +16,6 @@ def accept_order(id):
     s.status = 0
     db.session.commit()
     return '''
-    <h3> Status state is changed ...</h3>
+    <h2> Status state is changed ...</h2>
     '''
 

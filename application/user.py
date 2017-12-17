@@ -14,6 +14,7 @@ from application.extension import db
 from garbage import create_id_user
 
 
+# simple input http://0.0.0.0:8000/su/'amir@iust.com'/123456/amir/mohammadi/Male/1374/09121234567
 @app.route('/su/<email>/<passwordhash>/<firstname>/<lastname>/<gender>/<birth_date>/<phones>',
            methods=['GET', 'POST'])
 def signup(email, passwordhash, firstname, lastname, gender, birth_date, phones):
@@ -22,9 +23,8 @@ def signup(email, passwordhash, firstname, lastname, gender, birth_date, phones)
     db.session.add(g)
     db.session.commit()
     return '''
-    <h3>User added Completely ... </h3>
-    ''',200
-
+    <h2>User added Completely ... </h2>
+    ''', 200
 
 
 @app.route('/login/<username>/<passwordhash>', methods=['GET', 'POST'])
@@ -35,12 +35,6 @@ def login():
 def google_oauth_callback():
     pass
 
-@app.route("/logout/<username>")
-def logout():
-    pass
-
 
 def forget_password():
     pass
-
-

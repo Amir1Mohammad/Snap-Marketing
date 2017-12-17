@@ -31,11 +31,12 @@ def see_goods():
     return jsonify(jsonify=lisle)
 
 
+# simple input http://0.0.0.0:8000/ag/pofak/lina/loole/2000
 @app.route('/ag/<name>/<category>/<property>/<cost>', methods=['GET', 'POST'])
 def add_goods(name, category, property, cost):
     g = Good(id=create_id_good(), name=name, category=category, property=property, cost=int(cost))
     db.session.add(g)
     db.session.commit()
     return '''
-            <h3>Good added Completely ... </h3>
+            <h2>Good added Completely ... </h2>
     '''
