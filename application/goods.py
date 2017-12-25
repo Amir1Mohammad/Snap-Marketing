@@ -31,6 +31,27 @@ def see_goods():
     return jsonify(jsonify=lisle)
 
 
+@app.route('/category', methods=['GET'])
+def see_category():
+    listme = []
+    h = Good.query.order_by(Good.category).all()
+    print h
+    for each in h:
+        show = {
+            'category': each.category,
+
+        }
+        if show not in listme:
+            listme.append(show)
+
+    return jsonify(categories=listme)
+
+
+@app.route('/property/<category>',methods=['GET'])
+def see_property():
+    pass
+
+
 # simple input http://0.0.0.0:8000/ag/pofak/lina/loole/2000
 @app.route('/ag/<name>/<category>/<property>/<cost>', methods=['GET', 'POST'])
 def add_goods(name, category, property, cost):
@@ -40,3 +61,5 @@ def add_goods(name, category, property, cost):
     return '''
             <h2>Good added Completely ... </h2>
     '''
+
+
