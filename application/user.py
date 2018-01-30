@@ -3,7 +3,7 @@
 # find . -name "*.pyc" -exec rm -rf {} \;
 
 # Python import:
-from flask_login import LoginManager
+from flask import render_template
 
 __Author__ = "Amir Mohammad"
 
@@ -27,9 +27,10 @@ def signup(email, passwordhash, firstname, lastname, gender, birth_date, phones)
     ''', 200
 
 
-@app.route('/login/<username>/<passwordhash>', methods=['GET', 'POST'])
+# @app.route('/login/<username>/<passwordhash>', methods=['GET', 'POST'])
+@app.route('/login')
 def login():
-    pass
+    return render_template('login.html')
 
 
 def google_oauth_callback():

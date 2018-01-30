@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <title>Smart Bazaar an E-commerce Online Shopping Category Flat Bootstrap Responsive Website Template | SinglePage :: w3layouts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Smart Bazaar Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script type="application/x-javascript">
+        addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+               function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- Custom Theme files -->
+
+<link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet" type="text/css"/>
+<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css"/>
+<link href="{{ url_for('static', filename='css/menu.css') }}" rel="stylesheet" type="text/css"/>
+<link href="{{ url_for('static', filename='css/ken-burns.css') }}" rel="stylesheet" type="text/css"/>
+<link href="{{ url_for('static', filename='css/animate.min.css') }}" rel="stylesheet" type="text/css"/>
+<link href="{{ url_for('static', filename='css/owl.carousel.css') }}" rel="stylesheet" type="text/css"/>
+<link href="{{ url_for('static', filename='css/font-awesome.css') }}" rel="stylesheet" type="text/css"/>
+
+
+{#    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />#}
+{#    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />#}
+{#    <link href="css/animate.min.css" rel="stylesheet" type="text/css" media="all" /><!-- animation -->#}
+{#    <link href="css/menu.css" rel="stylesheet" type="text/css" media="all" /> <!-- menu style -->#}
+{#    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" media="all"> <!-- carousel slider -->#}
+{#    <link href="rate.css" rel="stylesheet" />#}
+    <!-- //Custom Theme files -->
+    <!-- font-awesome icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome icons -->
+    <!-- js -->
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!--flex slider-->
+    <script defer src="js/jquery.flexslider.js"></script>
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+    <script>
+	// Can also be used with $(document).ready()
+	$(window).load(function() {
+	  $('.flexslider').flexslider({
+		animation: "slide",
+		controlNav: "thumbnails"
+	  });
+	});
+    </script>
+    <!--flex slider-->
+    <script src="js/imagezoom.js"></script>
+    <!-- //js -->
+    <!-- web-fonts -->
+    <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lovers+Quarrel' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Offside' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css'>
+    <!-- web-fonts -->
+    <!-- scroll to fixed-->
+    <script src="js/jquery-scrolltofixed-min.js" type="text/javascript"></script>
+    <script>
+    $(document).ready(function() {
+
+        // Dock the header to the top of the window when scrolled past the banner. This is the default behaviour.
+
+        $('.header-two').scrollToFixed();
+        // previous summary up the page.
+
+        var summaries = $('.summary');
+        summaries.each(function(i) {
+            var summary = $(summaries[i]);
+            var next = summaries[i + 1];
+
+            summary.scrollToFixed({
+                marginTop: $('.header-two').outerHeight(true) + 10,
+                zIndex: 999
+            });
+        });
+    });
+    </script>
+    <!-- //scroll to fixed-->
+    <!-- start-smooth-scrolling -->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+    </script>
+    <!-- //end-smooth-scrolling -->
+    <!-- smooth-scrolling-of-move-up -->
+    <script type="text/javascript">
+	$(document).ready(function() {
+
+		var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear'
+		};
+
+		$().UItoTop({ easingType: 'easeOutQuart' });
+
+	});
+    </script>
+    <!-- //smooth-scrolling-of-move-up -->
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="w3ls-header">
+            <!--header-one-->
+            <div class="w3ls-header-right" dir="rtl">
+                <ul>
+                    <li class="dropdown head-dpdn">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i> My Account<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="login.html">Login </a></li>
+                            <li><a href="signup.html">Sign Up مشتری</a></li>
+                            <li><a href="peyk/signup.html">Sign Up پیک</a></li>
+                            <li><a href="login.html">درگاه پرداخت</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown head-dpdn">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cart-plus aria-hidden=" true"></i> صفحات اصلی<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html">صفحه اصلی</a></li>
+                            <li><a href="sitemap1.html">نقشه محصولات</a></li>
+                            <li><a href="darbare ma.html">درباره ما</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown head-dpdn">
+                        <a href="location.html" class="dropdown-toggle"><i class="fa fa-map-marker" aria-hidden="true"></i>موقعیت یاب</a>
+                    </li>
+                    <li class="dropdown head-dpdn">
+                        <a href="help1.html" class="dropdown-toggle"><i class="fa fa-question-circle" aria-hidden="true"></i> Help</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="header-two">
+            <!-- header-two -->
+            <div class="container">
+                <div class="header-logo">
+                    <h1><a href="index.html"><span>اسنپ مارکت</span></h1>
+
+                </div>
+
+                <div class="header-search">
+                    <form action="#" method="post">
+                        <input type="search" name="Search" placeholder="جست و جو محصول ..." required="">
+                        <button type="submit" class="btn btn-default" aria-label="Left Align">
+                            <i class="fa fa-search" aria-hidden="true"> </i>
+                        </button>
+                    </form>
+                </div>
+                <div class="header-cart">
+                    <div class="my-account">
+                        <a href="location.html"><i class="fa fa-map-marker" aria-hidden="true"></i> موقعیت یاب</a>
+                    </div>
+                    <div class="cart">
+                        <form action="#" method="post" class="last">
+                            <input type="hidden" name="cmd" value="_cart" />
+                            <input type="hidden" name="display" value="1" />
+                            <button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div><!-- //header-two -->
+        <div class="header-three">
+            <!-- header-three -->
+            <div class="container">
+                <div class="menu">
+                    <div class="cd-dropdown-wrapper">
+                        <a class="cd-dropdown-trigger" href="#0">snap market</a>
+                        <nav class="cd-dropdown">
+                            <a href="#0" class="cd-close">Close</a>
+                            <ul class="cd-dropdown-content" dir="rtl">
+                                <li><a href="khiyarshor.html">خیارشور</a></li>
+                        </nav> <!-- .cd-dropdown -->
+                    </div> <!-- .cd-dropdown-wrapper -->
+                </div>
+                <div class="move-text">
+                    <div class="marquee"><a href="offers.html">با ما باشید <span>تخفیف ها |جدیدها </span> <span> با بهترین سریع ترین و         راحت ترین روش خرید کنید</span></a></div>
+                    <script type="text/javascript" src="js/jquery.marquee.min.js"></script>
+                    <script>
+                        $('.marquee').marquee({ pauseOnHover: true });
+                        //@ sourceURL=pen.js
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- products -->
+    <div class="products">
+        <div class="container">
+            <div class="col-md-9 product-w3ls-right">
+                <!-- breadcrumbs -->
+                <ol class="breadcrumb breadcrumb1" dir="rtl">
+                    <li><a href="index.html">صفحه اصلی</a></li>
+                    <li class="active">محصولات</li>
+                </ol>
+                <div class="clearfix"> </div>
+                <!-- //breadcrumbs -->
+                <div class="product-top">
+                    <h4>سس گوجه فرنگی</h4>
+                    <ul>
+                        <li class="dropdown head-dpdn">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">طبقه بنده شده<span class="caret"></span></a>
+                            <ul class="dropdown-menu" dir="rtl">
+                                <li><a href="#">ارزان</a></li>
+                                <li><a href="#">گران</a></li>
+                                <li><a href="#">محبوب</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown head-dpdn">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">مارک ها<span class="caret"></span></a>
+                            <ul class="dropdown-menu" dir="rtl">
+                                <li><a href="#">بدر</a></li>
+                                <li><a href="#">یک و یک</a></li>
+                                <li><a href="#">اروم آدا</a></li>
+                                <li><a href="#">چاشنی</a></li>
+                                <li><a href="#">بقا</a></li>
+                                <li><a href="#">طراوت</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="products-row">
+                    <div class="col-md-3 product-grids">
+                        <div class="agile-products">
+                            <div class="new-tag"><h6>1%<br>Off</h6></div>
+                            <a href="mahram.html"><img src="/static/images/s1.jpg" class="img-responsive" alt="img"></a>
+                            <div class="agile-product-text">
+                                <center> <h5><a href="mahram.html">مهرام</a></h5></center>
+                                <h6><del>3300T</del> 3000T</h6>
+                                <form action="#" method="post">
+                                    <input type="hidden" name="cmd" value="_cart" />
+                                    <input type="hidden" name="add" value="1" />
+                                    <input type="hidden" name="w3ls_item" value="مهرام" />
+                                    <input type="hidden" name="amount" value="30T" />
+                                    <button type="submit" class="w3ls-cart pw3ls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> افزودن به سبد</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-grids">
+                        <div class="agile-products">
+                            <div class="new-tag"><h6>جدید</h6></div>
+                            <a href="delvase.html"><img src="/static/images/s2.jpg" class="img-responsive" alt="img"></a>
+                            <div class="agile-product-text">
+                                <center><h5><a href="single.html">دلوسه</a></h5></center>
+                                <h6><del>4000T</del> 4000T</h6>
+                                <form action="#" method="post">
+                                    <input type="hidden" name="cmd" value="_cart" />
+                                    <input type="hidden" name="add" value="1" />
+                                    <input type="hidden" name="w3ls_item" value="دلوسه" />
+                                    <input type="hidden" name="amount" value="40T" />
+                                    <button type="submit" class="w3ls-cart pw3ls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> افزودن به سبد</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-grids">
+                        <div class="agile-products">
+                            <div class="new-tag"><h6>20%<br>Off</h6></div>
+                            <a href="behroz.html"><img src="/static/images/s3.jpg" class="img-responsive" alt="img"></a>
+                            <div class="agile-product-text">
+                                <center><h5><a href="single.html">بهروز</a></h5></center>
+                                <h6><del>2200T</del> 2000T</h6>
+                                <form action="#" method="post">
+                                    <input type="hidden" name="cmd" value="_cart" />
+                                    <input type="hidden" name="add" value="1" />
+                                    <input type="hidden" name="w3ls_item" value="بهروز" />
+                                    <input type="hidden" name="amount" value="20T" />
+                                    <button type="submit" class="w3ls-cart pw3ls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> افزودن به سبد</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-grids">
+                        <div class="agile-products">
+                            <div class="new-tag"><h6>30%<br>Off</h6></div>
+                            <a href="yeko yek.html"><img src="/static/images/s4.jpg" class="img-responsive" alt="img"></a>
+                            <div class="agile-product-text">
+                                <center><h5><a href="single.html">یک و یک</a></h5></center>
+                                <h6><del>3500T</del> 2000T</h6>
+                                <form action="#" method="post">
+                                    <input type="hidden" name="cmd" value="_cart" />
+                                    <input type="hidden" name="add" value="1" />
+                                    <input type="hidden" name="w3ls_item" value="یک و یک" />
+                                    <input type="hidden" name="amount" value="20T" />
+                                    <button type="submit" class="w3ls-cart pw3ls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>افزودن به سبد</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-grids">
+                        <div class="agile-products">
+                            <div class="new-tag"><h6>30%<br>Off</h6></div>
+                            <a href="single.html"><img src="/static/images/s5.jpg" class="img-responsive" alt="img"></a>
+                            <div class="agile-product-text">
+                                <center><h5><a href="single.html">تند مهرام</a></h5></center>
+                                <h6><del>3500T</del> 3000T</h6>
+                                <form action="#" method="post">
+                                    <input type="hidden" name="cmd" value="_cart" />
+                                    <input type="hidden" name="add" value="1" />
+                                    <input type="hidden" name="w3ls_item" value="تند مهرام" />
+                                    <input type="hidden" name="amount" value="30T" />
+                                    <button type="submit" class="w3ls-cart pw3ls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>افزودن به سبد</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-grids">
+                        <div class="agile-products">
+                            <div class="new-tag"><h6>20%<br>Off</h6></div>
+                            <a href="single.html"><img src="/static/images/s6.jpg" class="img-responsive" alt="img"></a>
+                            <div class="agile-product-text">
+                                <center><h5><a href="single.html">هلیوس</a></h5></center>
+                                <h6><del>3500T</del> 3000T</h6>
+                                <form action="#" method="post">
+                                    <input type="hidden" name="cmd" value="_cart" />
+                                    <input type="hidden" name="add" value="1" />
+                                    <input type="hidden" name="w3ls_item" value="هلیوس" />
+                                    <input type="hidden" name="amount" value="30T" />
+                                    <button type="submit" class="w3ls-cart pw3ls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>افزودن به سبد</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-grids">
+                        <div class="agile-products">
+                            <div class="new-tag"><h6>10%<br>Off</h6></div>
+                            <a href="single.html"><img src="/static/images/s7.jpg" class="img-responsive" alt="img"></a>
+                            <div class="agile-product-text">
+                                <center><h5><a href="single.html">کوما</a></h5></center>
+                                <h6><del>3500T</del> 3000T</h6>
+                                <form action="#" method="post">
+                                    <input type="hidden" name="cmd" value="_cart" />
+                                    <input type="hidden" name="add" value="1" />
+                                    <input type="hidden" name="w3ls_item" value="کوما" />
+                                    <input type="hidden" name="amount" value="30T" />
+                                    <button type="submit" class="w3ls-cart pw3ls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>افزودن به سبد</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-grids">
+                        <div class="agile-products">
+                            <div class="new-tag"><h6>5%<br>Off</h6></div>
+                            <a href="single.html"><img src="/static/images/s8.jpg" class="img-responsive" alt="img"></a>
+                            <div class="agile-product-text">
+                                <center><h5><a href="single.html">کیمبو</a></h5></center>
+                                <h6><del>3500T</del> 3000T</h6>
+                                <form action="#" method="post">
+                                    <input type="hidden" name="cmd" value="_cart" />
+                                    <input type="hidden" name="add" value="1" />
+                                    <input type="hidden" name="w3ls_item" value="کیمبو" />
+                                    <input type="hidden" name="amount" value="30T" />
+                                    <button type="submit" class="w3ls-cart pw3ls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> افزودن به سبد</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-grids">
+                        <div class="agile-products">
+                            <div class="new-tag"><h6>2%<br>Off</h6></div>
+                            <a href="single.html"><img src="/static/images/s9.jpg" class="img-responsive" alt="img"></a>
+                            <div class="agile-product-text">
+                                <center> <h5><a href="single.html">تبرک</a></h5></center>
+                                <h6><del>3500T</del> 3000T</h6>
+                                <form action="#" method="post">
+                                    <input type="hidden" name="cmd" value="_cart" />
+                                    <input type="hidden" name="add" value="1" />
+                                    <input type="hidden" name="w3ls_item" value="تبرک" />
+                                    <input type="hidden" name="amount" value="30T" />
+                                    <button type="submit" class="w3ls-cart pw3ls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>افزودن به سبد</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-grids">
+                        <div class="agile-products">
+                            <div class="new-tag"><h6>3%<br>Off</h6></div>
+                            <a href="single.html"><img src="/static/images/s10.jpg" class="img-responsive" alt="img"></a>
+                            <div class="agile-product-text">
+                                <center><h5><a href="single.html">کچاپ</a></h5></center>
+                                <h6><del>3500T</del> 3000T</h6>
+                                <form action="#" method="post">
+                                    <input type="hidden" name="cmd" value="_cart" />
+                                    <input type="hidden" name="add" value="1" />
+                                    <input type="hidden" name="w3ls_item" value="کچاپ" />
+                                    <input type="hidden" name="amount" value="30T" />
+                                    <button type="submit" class="w3ls-cart pw3ls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>افزودن به سبد</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-grids">
+                        <div class="agile-products">
+                            <div class="new-tag"><h6>10%<br>Off</h6></div>
+                            <a href="single.html"><img src="/static/images/s11.jpg" class="img-responsive" alt="img"></a>
+                            <div class="agile-product-text">
+                                <center><h5><a href="single.html">چیلی</a></h5></center>
+                                <h6><del>3500T</del> 3000T</h6>
+                                <form action="#" method="post">
+                                    <input type="hidden" name="cmd" value="_cart" />
+                                    <input type="hidden" name="add" value="1" />
+                                    <input type="hidden" name="w3ls_item" value="چیلی" />
+                                    <input type="hidden" name="amount" value="30T" />
+                                    <button type="submit" class="w3ls-cart pw3ls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>افزودن به سبد</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-grids">
+                        <div class="agile-products">
+                            <div class="new-tag"><h6>5%<br>Off</h6></div>
+                            <a href="single.html"><img src="/static/images/s12.jpg" class="img-responsive" alt="img"></a>
+                            <div class="agile-product-text">
+                                <center><h5><a href="single.html">امبو</a></h5></center>
+                                <h6><del>3500T</del> 3000T</h6>
+                                <form action="#" method="post">
+                                    <input type="hidden" name="cmd" value="_cart" />
+                                    <input type="hidden" name="add" value="1" />
+                                    <input type="hidden" name="w3ls_item" value="امبو" />
+                                    <input type="hidden" name="amount" value="30T" />
+                                    <button type="submit" class="w3ls-cart pw3ls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>افزودن به سبد</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-grids">
+                        <div class="agile-products">
+                            <div class="new-tag"><h6>1%<br>Off</h6></div>
+                            <a href="single.html"><img src="/static/images/s13.jpg" class="img-responsive" alt="img"></a>
+                            <div class="agile-product-text">
+                                <center><h5><a href="single.html">آمریکن گاردن</a></h5></center>
+                                <h6><del>3500T</del> 3000T</h6>
+                                <form action="#" method="post">
+                                    <input type="hidden" name="cmd" value="_cart" />
+                                    <input type="hidden" name="add" value="1" />
+                                    <input type="hidden" name="w3ls_item" value="آمریکن گاردن" />
+                                    <input type="hidden" name="amount" value="30T" />
+                                    <button type="submit" class="w3ls-cart pw3ls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>افزودن به سبد</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-grids">
+                        <div class="agile-products">
+                            <div class="new-tag"><h6>15%<br>Off</h6></div>
+                            <a href="single.html"><img src="/static/images/s14.jpg" class="img-responsive" alt="img"></a>
+                            <div class="agile-product-text">
+                                <center><h5><a href="single.html">استولن</a></h5></center>
+                                <h6><del>3500T</del> 3000T</h6>
+                                <form action="#" method="post">
+                                    <input type="hidden" name="cmd" value="_cart" />
+                                    <input type="hidden" name="add" value="1" />
+                                    <input type="hidden" name="w3ls_item" value="استولن" />
+                                    <input type="hidden" name="amount" value="30T" />
+                                    <button type="submit" class="w3ls-cart pw3ls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>افزودن به سبد</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-grids">
+                        <div class="agile-products">
+                            <div class="new-tag"><h6>14%<br>Off</h6></div>
+                            <a href="single.html"><img src="/static/images/s15.jpg" class="img-responsive" alt="img"></a>
+                            <div class="agile-product-text">
+                                <center> <h5><a href="single.html">یارن</a></h5></center>
+                                <h6><del>3500T</del> 3000T</h6>
+                                <form action="#" method="post">
+                                    <input type="hidden" name="cmd" value="_cart" />
+                                    <input type="hidden" name="add" value="1" />
+                                    <input type="hidden" name="w3ls_item" value="یارن" />
+                                    <input type="hidden" name="amount" value="30T" />
+                                    <button type="submit" class="w3ls-cart pw3ls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>افزودن به سبد</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-grids">
+                        <div class="agile-products">
+                            <div class="new-tag"><h6>10%<br>Off</h6></div>
+                            <a href="single.html"><img src="/static/images/s16.jpg" class="img-responsive" alt="img"></a>
+                            <div class="agile-product-text">
+                                <center><h5><a href="single.html">بقا</a></h5></center>
+                                <h6><del>3500T</del> 3000T</h6>
+                                <form action="#" method="post">
+                                    <input type="hidden" name="cmd" value="_cart" />
+                                    <input type="hidden" name="add" value="1" />
+                                    <input type="hidden" name="w3ls_item" value="بقا" />
+                                    <input type="hidden" name="amount" value="30T" />
+                                    <button type="submit" class="w3ls-cart pw3ls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> افزودن به سبد</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <!-- add-products -->
+                <div class="w3ls-add-grids w3agile-add-products">
+                    <a href="#">
+                        <h4> محصولات پر طرفدار<span>20%</span> تخفیف</h4>
+                        <h6>الان بخرید<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></h6>
+                    </a>
+                </div>
+                <!-- //add-products -->
+            </div>
+            <div class="col-md-3 rsidebar">
+                <div class="rsidebar-top">
+                    <div class="slider-left">
+                        <h4>طبقه بندی بر اساس قیمت</h4>
+                        <center>
+                            <div class="row row1 scroll-pane">
+                                <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>1000 - 2000تومان  </label>
+                                <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>2000 - 2500  تومان</label>
+                                <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>2500 - 3000تومان </label>
+                                <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>4500 - 5000  تومان</label>
+                                <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>سایر</label>
+                            </div>
+                        </center>
+                    </div>
+                    <div class="sidebar-row" dir="rtl">
+                        <h4>سایر محصولات بیشتر جستوجو شده</h4>
+                        <ul class="faq">
+                            <li class="item1">
+                                <a href="#">دامداران<span class="glyphicon glyphicon-menu-down"></span></a>
+                                <ul>
+                                    <li class="subitem1"><a href="#">شیر</a></li>
+                                    <li class="subitem1"><a href="#">ماست</a></li>
+                                    <li class="subitem1"><a href="#">پنیر</a></li>
+                                </ul>
+                            </li>
+                            <li class="item2">
+                                <a href="#">اروم آدا<span class="glyphicon glyphicon-menu-down"></span></a>
+                                <ul>
+                                    <li class="subitem1"><a href="#">خیارشور</a></li>
+                                    <li class="subitem1"><a href="#">زیتون</a></li>
+                                    <li class="subitem1"><a href="#">رب گوجه</a></li>
+                                </ul>
+                            </li>
+                            <li class="item3">
+                                <a href="#">کاله<span class="glyphicon glyphicon-menu-down"></span></a>
+                                <ul>
+                                    <li class="subitem1"><a href="#">ژامبون</a></li>
+                                    <li class="subitem1"><a href="#">ماست</a></li>
+                                    <li class="subitem1"><a href="#">سس</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- script for tabs -->
+                        <script type="text/javascript">
+							$(function() {
+
+								var menu_ul = $('.faq > li > ul'),
+									   menu_a  = $('.faq > li > a');
+
+								menu_ul.hide();
+
+								menu_a.click(function(e) {
+									e.preventDefault();
+									if(!$(this).hasClass('active')) {
+										menu_a.removeClass('active');
+										menu_ul.filter(':visible').slideUp('normal');
+										$(this).addClass('active').next().stop(true,true).slideDown('normal');
+									} else {
+										$(this).removeClass('active');
+										$(this).next().stop(true,true).slideUp('normal');
+									}
+								});
+
+							});
+                        </script>
+                        <!-- script for tabs -->
+                    </div>
+                </div>
+                <div class="related-row" dir="rtl">
+                    <h4>محصولات مرتبط</h4>
+                    <ul>
+                        <li><a href="products.html">سوسیس</a></li>
+                        <li><a href="products.html">کالباس</a></li>
+                        <li><a href="products.html">خیارشور</a></li>
+                        <li><a href="products.html">سس فرانسوی</a></li>
+                        <li><a href="products.html">فرآوره های نانی</a></li>
+                        <li><a href="products.html">نوشابه</a></li>
+                        <li><a href="products.html">چیپس</a></li>
+                    </ul>
+                </div>
+                <div class="related-row">
+                    <center><h4>مطابق سلیقه شما</h4></center>
+                    <div class="galry-like">
+                        <a href="single.html"><img src="/static/images/e1.png" class="img-responsive" alt="img"></a>
+                        <h4><a href="products.html">حالا</a></h4>
+                        <h5>2000T</h5>
+                    </div>
+                </div>
+
+                <div class="related-row">
+                    <center><h4>مناسب ذایقه شما</h4></center>
+                    <div class="galry-like">
+                        <a href="single.html"><img src="/static/images/1k.jpg" class="img-responsive" alt="img"></a>
+                        <h4><a href="products.html">اکنون</a></h4>
+                        <h5>2500T</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+
+    <!--//products-->
+    <!-- footer-top -->
+    <div class="w3agile-ftr-top">
+        <div class="container">
+            <div class="ftr-toprow">
+                <div class="col-md-4 ftr-top-grids">
+                    <div class="ftr-top-left">
+                        <i class="fa fa-truck" aria-hidden="true"></i>
+                    </div>
+                    <div class="ftr-top-right" style="direction:rtl">
+                        <h4>تحویل در محل</h4>
+                        <p>کالای مورد نظر خود را سفارش داده و آن را درب منزل تحویل بگیرید</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="col-md-4 ftr-top-grids">
+                    <div class="ftr-top-left">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    </div>
+                    <div class="ftr-top-right">
+                        <h4>احترام به خواسته مشتری</h4>
+                        <p>اعتماد شما سرمایه ماست</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="col-md-4 ftr-top-grids">
+                    <div class="ftr-top-left">
+                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                    </div>
+                    <div class="ftr-top-right" style="direction:rtl">
+                        <h4>کیفیت مناسب</h4>
+                        <p> هدف ما تهیه کالای مورد نظر سما با بلاترین کیفیت ممکن است</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- //footer-top -->
+    <!-- subscribe -->
+    <div class="subscribe">
+        <div class="container">
+            <div class="col-md-6 social-icons w3-agile-icons">
+
+                <ul>
+                    <li><a href="#" class="fa fa-facebook icon facebook"> </a></li>
+                    <li><a href="#" class="fa fa-twitter icon twitter"> </a></li>
+                    <li><a href="#" class="fa fa-google-plus icon googleplus"> </a></li>
+                    <li><a href="#" class="fa fa-dribbble icon dribbble"> </a></li>
+                    <li><a href="#" class="fa fa-rss icon rss"> </a></li>
+                </ul>
+                <ul class="apps">
+                    <li><h4>Download Our app : </h4> </li>
+                    <li><a href="#" class="fa fa-apple"></a></li>
+                    <li><a href="#" class="fa fa-windows"></a></li>
+                    <li><a href="#" class="fa fa-android"></a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 subscribe-right">
+                <h4>بدو بیا تو</h4>
+                <form action="#" method="post">
+                    <input type="text" name="email" placeholder="Enter your Email..." required="">
+                    <input type="submit" value="Subscribe">
+                </form>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <!-- //subscribe -->
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer-info w3-agileits-info">
+                <div class="col-md-4 address-left agileinfo">
+                    <div class="footer-logo header-logo">
+                        <h4><a href="index.html"><span>اسنپ مارکت</span><i></i></a></h4>
+
+                    </div>
+                    <ul>
+                        <li><a href="about.html">درباره ما</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-8 address-right">
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- //footer -->
+    <div class="copy-right">
+        <div class="container">
+            <p></p>
+        </div>
+    </div>
+    <!-- cart-js -->
+    <script src="js/minicart.js"></script>
+    <script>
+        w3ls.render();
+
+        w3ls.cart.on('w3sb_checkout', function (evt) {
+            var items, len, i;
+
+            if (this.subtotal() > 0) {
+                items = this.items();
+
+                for (i = 0, len = items.length; i < len; i++) {
+                    items[i].set('shipping', 0);
+                    items[i].set('shipping2', 0);
+                }
+            }
+        });
+    </script>
+    <!-- //cart-js -->
+    <!-- countdown.js -->
+    <script src="js/jquery.knob.js"></script>
+    <script src="js/jquery.throttle.js"></script>
+    <script src="js/jquery.classycountdown.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#countdown1').ClassyCountdown({
+                end: '1388268325',
+                now: '1387999995',
+                labels: true,
+                style: {
+                    element: "",
+                    textResponsive: .5,
+                    days: {
+                        gauge: {
+                            thickness: .10,
+                            bgColor: "rgba(0,0,0,0)",
+                            fgColor: "#1abc9c",
+                            lineCap: 'round'
+                        },
+                        textCSS: 'font-weight:300; color:#fff;'
+                    },
+                    hours: {
+                        gauge: {
+                            thickness: .10,
+                            bgColor: "rgba(0,0,0,0)",
+                            fgColor: "#05BEF6",
+                            lineCap: 'round'
+                        },
+                        textCSS: ' font-weight:300; color:#fff;'
+                    },
+                    minutes: {
+                        gauge: {
+                            thickness: .10,
+                            bgColor: "rgba(0,0,0,0)",
+                            fgColor: "#8e44ad",
+                            lineCap: 'round'
+                        },
+                        textCSS: ' font-weight:300; color:#fff;'
+                    },
+                    seconds: {
+                        gauge: {
+                            thickness: .10,
+                            bgColor: "rgba(0,0,0,0)",
+                            fgColor: "#f39c12",
+                            lineCap: 'round'
+                        },
+                        textCSS: ' font-weight:300; color:#fff;'
+                    }
+
+                },
+                onEndCallback: function () {
+                    console.log("Time out!");
+                }
+            });
+        });
+    </script>
+    <!-- //countdown.js -->
+
+    <script src="js/jquery.menu-aim.js"> </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <title>Smart Bazaar an E-commerce Online Shopping Category Flat Bootstrap Responsive Website Template | SinglePage :: w3layouts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Smart Bazaar Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script type="application/x-javascript">
+        addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+               function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- Custom Theme files -->
+
+    <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet" type="text/css"/>
+<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css"/>
+<link href="{{ url_for('static', filename='css/menu.css') }}" rel="stylesheet" type="text/css"/>
+<link href="{{ url_for('static', filename='css/ken-burns.css') }}" rel="stylesheet" type="text/css"/>
+<link href="{{ url_for('static', filename='css/animate.min.css') }}" rel="stylesheet" type="text/css"/>
+<link href="{{ url_for('static', filename='css/owl.carousel.css') }}" rel="stylesheet" type="text/css"/>
+<link href="{{ url_for('static', filename='css/font-awesome.css') }}" rel="stylesheet" type="text/css"/>
+
+
+{#    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />#}
+{#    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />#}
+{#    <link href="css/animate.min.css" rel="stylesheet" type="text/css" media="all" /><!-- animation -->#}
+{#    <link href="css/menu.css" rel="stylesheet" type="text/css" media="all" /> <!-- menu style -->#}
+{#    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" media="all"> <!-- carousel slider -->#}
+{#    <link href="rate.css" rel="stylesheet" />#}
+    <!-- //Custom Theme files -->
+    <!-- font-awesome icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome icons -->
+    <!-- js -->
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!--flex slider-->
+    <script defer src="js/jquery.flexslider.js"></script>
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+    <script>
+	// Can also be used with $(document).ready()
+	$(window).load(function() {
+	  $('.flexslider').flexslider({
+		animation: "slide",
+		controlNav: "thumbnails"
+	  });
+	});
+    </script>
+    <!--flex slider-->
+    <script src="js/imagezoom.js"></script>
+    <!-- //js -->
+    <!-- web-fonts -->
+    <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lovers+Quarrel' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Offside' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css'>
+    <!-- web-fonts -->
+    <!-- scroll to fixed-->
+    <script src="js/jquery-scrolltofixed-min.js" type="text/javascript"></script>
+    <script>
+    $(document).ready(function() {
+
+        // Dock the header to the top of the window when scrolled past the banner. This is the default behaviour.
+
+        $('.header-two').scrollToFixed();
+        // previous summary up the page.
+
+        var summaries = $('.summary');
+        summaries.each(function(i) {
+            var summary = $(summaries[i]);
+            var next = summaries[i + 1];
+
+            summary.scrollToFixed({
+                marginTop: $('.header-two').outerHeight(true) + 10,
+                zIndex: 999
+            });
+        });
+    });
+    </script>
+    <!-- //scroll to fixed-->
+    <!-- start-smooth-scrolling -->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+    </script>
+    <!-- //end-smooth-scrolling -->
+    <!-- smooth-scrolling-of-move-up -->
+    <script type="text/javascript">
+	$(document).ready(function() {
+
+		var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear'
+		};
+
+		$().UItoTop({ easingType: 'easeOutQuart' });
+
+	});
+    </script>
+    <!-- //smooth-scrolling-of-move-up -->
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="w3ls-header">
+            <!--header-one-->
+            <div class="w3ls-header-right" dir="rtl">
+                <ul>
+                    <li class="dropdown head-dpdn">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i> My Account<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="login.html">Login </a></li>
+                            <li><a href="signup.html">Sign Up مشتری</a></li>
+                            <li><a href="peyk/signup.html">Sign Up پیک</a></li>
+                            <li><a href="login.html">درگاه پرداخت</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown head-dpdn">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cart-plus aria-hidden=" true"></i> صفحات اصلی<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html">صفحه اصلی</a></li>
+                            <li><a href="sitemap1.html">نقشه محصولات</a></li>
+                            <li><a href="darbare ma.html">درباره ما</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown head-dpdn">
+                        <a href="location.html" class="dropdown-toggle"><i class="fa fa-map-marker" aria-hidden="true"></i>موقعیت یاب</a>
+                    </li>
+                    <li class="dropdown head-dpdn">
+                        <a href="help1.html" class="dropdown-toggle"><i class="fa fa-question-circle" aria-hidden="true"></i> Help</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="header-two">
+            <!-- header-two -->
+            <div class="container">
+                <div class="header-logo">
+                    <h1><a href="index.html"><span>اسنپ مارکت</span></h1>
+
+                </div>
+
+                <div class="header-search">
+                    <form action="#" method="post">
+                        <input type="search" name="Search" placeholder="جست و جو محصول ..." required="">
+                        <button type="submit" class="btn btn-default" aria-label="Left Align">
+                            <i class="fa fa-search" aria-hidden="true"> </i>
+                        </button>
+                    </form>
+                </div>
+                <div class="header-cart">
+                    <div class="my-account">
+                        <a href="location.html"><i class="fa fa-map-marker" aria-hidden="true"></i> موقعیت یاب</a>
+                    </div>
+                    <div class="cart">
+                        <form action="#" method="post" class="last">
+                            <input type="hidden" name="cmd" value="_cart" />
+                            <input type="hidden" name="display" value="1" />
+                            <button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div><!-- //header-two -->
+        <div class="header-three">
+            <!-- header-three -->
+            <div class="container">
+                <div class="menu">
+                    <div class="cd-dropdown-wrapper">
+                        <a class="cd-dropdown-trigger" href="#0">snap market</a>
+                        <nav class="cd-dropdown">
+                            <a href="#0" class="cd-close">Close</a>
+                            <ul class="cd-dropdown-content" dir="rtl">
+                                <li><a href="khiyarshor.html">خیارشور</a></li>
+                                <li><a href="sos.html">سس</a></li>
+                        </nav> <!-- .cd-dropdown -->
+                    </div> <!-- .cd-dropdown-wrapper -->
+                </div>
+                <div class="move-text">
+                    <div class="marquee"><a href="offers.html">با ما باشید <span>تخفیف ها |جدیدها </span> <span> با بهترین سریع ترین و         راحت ترین روش خرید کنید</span></a></div>
+                    <script type="text/javascript" src="js/jquery.marquee.min.js"></script>
+                    <script>
+                        $('.marquee').marquee({ pauseOnHover: true });
+                        //@ sourceURL=pen.js
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- site map -->
+    <div class="sitemap" dir="rtl">
+        <div class="container">
+            <h3 class="w3ls-title w3ls-title1">کالا های جدید یا به روز شده</h3>
+            <div class="sitemap-row">
+                <nav class="sitemap-tabs" data-spy="affix" data-offset-top="400">
+                    <div id="myNavbar">
+                        <ul>
+                            <center>
+                                <li><a href="#w3sec4"><i class="fa fa-home"></i> مواد غذایی</a></li>
+                                <li><a href="#w3sec6"><i class="fa fa-shopping-basket"></i> خواروبار</a></li>
+                                <li><a href="#w3sec8"><i class="fa fa-medkit"></i> سلامتی </a></li>
+                            </center>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div id="w3sec4" class="container-fluid sitemap-text">
+                    <h3 class="w3sitemap-title"><i class="fa fa-home"></i> مواد غذایی </h3>
+                    <div class="col-md-3 sitemap-text-grids">
+                        <h5 class="sitemap-text-title"><a href="products3.html">چیپس</a></h5>
+                        <ul>
+                            <li><a href="products3.html">چی توز </a></li>
+                            <li><a href="products3.html">مزمز</a></li>
+                            <li><a href="products3.html">لینا</a></li>
+                            <li><a href="products3.html">کرانچیپس</a></li>
+                            <li><a href="products3.html">پرینگلز</a></li>
+                        </ul>
+                        <h5 class="sitemap-text-title"><a href="products3.html">میوه تازه و خشک شده</a></h5>
+                        <ul>
+                            <li><a href="products3.html">سی گل </a></li>
+                            <li><a href="products3.html">سیگنچر </a></li>
+                            <li><a href="products3.html">لنوس</a></li>
+                            <li><a href="products3.html">تانسو</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 sitemap-text-grids">
+                        <h5 class="sitemap-text-title"><a href="products3.html">شیر</a></h5>
+                        <ul>
+                            <li><a href="products3.html">دامداران </a></li>
+                            <li><a href="products3.html">پاک</a></li>
+                            <li><a href="products3.html">می ماس</a></li>
+                            <li><a href="products3.html">چوپان</a></li>
+                            <li><a href="products3.html">میهن</a></li>
+                            <li><a href="products3.html">پگاه</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 sitemap-text-grids">
+                        <h5 class="sitemap-text-title"><a href="products3.html">ژامبون </a></h5>
+                        <ul>
+                            <li><a href="products3.html">کاله</a></li>
+                            <li><a href="products3.html">سولیکو</a></li>
+                            <li><a href="products3.html">هرمس</a></li>
+                            <li><a href="products3.html">ماهیران</a></li>
+                            <li><a href="products3.html">میکایلیان</a></li>
+                            <li><a href="products3.html">کامپوره خزر</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 sitemap-text-grids">
+                        <h5 class="sitemap-text-title"><a href="products3.html">رب </a></h5>
+                        <ul>
+                            <li><a href="products3.html">آتا </a></li>
+                            <li><a href="products3.html">یک و یک </a></li>
+                            <li><a href="products3.html">تبرک</a></li>
+                            <li><a href="products3.html">چین چین  </a></li>
+                            <li><a href="products3.html">محسن </a></li>
+                            <li><a href="products3.html">گلنوش</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 sitemap-text-grids">
+                        <h5 class="sitemap-text-title"><a href="products3.html">خیار شور </a></h5>
+                        <ul>
+                            <li><a href="products3.html">بدر </a></li>
+                            <li><a href="products3.html">یک و یک </a></li>
+                            <li><a href="products3.html">اروم آدا</a></li>
+                            <li><a href="products3.html">چاشنی  </a></li>
+                            <li><a href="products3.html">بقا </a></li>
+                            <li><a href="products3.html">طراوت</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 sitemap-text-grids">
+                        <h5 class="sitemap-text-title"><a href="products3.html">پنیر </a></h5>
+                        <ul>
+                            <li><a href="products3.html">روزانه </a></li>
+                            <li><a href="products3.html">کاله </a></li>
+                            <li><a href="products3.html">میهن</a></li>
+                            <li><a href="products3.html">پگاه  </a></li>
+                            <li><a href="products3.html">پاک </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 sitemap-text-grids">
+                        <h5 class="sitemap-text-title"><a href="products3.html">سس </a></h5>
+                        <ul>
+                            <li><a href="behroz.html">بهروز</a></li>
+                            <li><a href="delvase.html">دلوسه </a></li>
+                            <li><a href="mahram.html">مهرام</a></li>
+                            <li><a href="yeko yek.html">یک و یک</a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+
+                <div id="w3sec6" class="container-fluid sitemap-text">
+                    <h3 class="w3sitemap-title"><i class="fa fa-shopping-basket"></i> خواروبار</h3>
+                    <div class="col-md-3 sitemap-text-grids">
+                        <h5 class="sitemap-text-title"><a href="products5.html"> لوبیا </a></h5>
+                        <ul>
+                            <li><a href="products5.html">اروم آدا </a></li>
+                            <li><a href="products5.html">بیژن </a></li>
+                            <li><a href="products5.html">دل پذیر</a></li>
+                            <li><a href="products5.html">یک و یک </a></li>
+                            <li><a href="products5.html">اویلا</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 sitemap-text-grids">
+                        <h5 class="sitemap-text-title"><a href="products5.html">سبزی خشک</a></h5>
+                        <ul>
+                            <li><a href="products5.html">فرانداز </a></li>
+                            <li><a href="products5.html">به آفرین</a></li>
+                            <li><a href="products5.html">بیژن</a></li>
+                            <li><a href="products5.html">سیبونه </a></li>
+                            <li><a href="products5.html">رامشه </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 sitemap-text-grids">
+                        <h5 class="sitemap-text-title"><a href="products5.html"> آجیل </a></h5>
+                        <ul class="is-hidden">
+                            <ul>
+                                <li><a href="products5.html">شهردانه</a></li>
+                                <li><a href="products5.html">مانی</a></li>
+                                <li><a href="products5.html">مزمز</a></li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 sitemap-text-grids">
+                        <h5 class="sitemap-text-title"><a href="products5.html">ادویه جات </a></h5>
+                        <ul>
+                            <li><a href="products5.html">گلستان </a></li>
+                            <li><a href="products5.html">گلها </a></li>
+                            <li><a href="products5.html">هاتی کارا</a></li>
+                            <li><a href="products5.html">الیت </a></li>
+                            <li><a href="products5.html">برتر </a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div id="w3sec8" class="container-fluid sitemap-text">
+                    <h3 class="w3sitemap-title"><i class="fa fa-medkit"></i> سلامت </h3>
+                    <div class="col-md-3 sitemap-text-grids">
+                        <h5 class="sitemap-text-title"><a href="products7.html">دستمال کاغذی</a></h5>
+                        <ul>
+                            <li><a href="products7.html">سافتلن </a></li>
+                            <li><a href="products7.html">بی تا</a></li>
+                            <li><a href="products7.html">شاتن </a></li>
+                            <li><a href="products7.html">پاپیا </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 sitemap-text-grids">
+                        <h5 class="sitemap-text-title"><a href="products7.html">شامپو</a></h5>
+                        <ul>
+                            <li><a href="products7.html">داو</a></li>
+                            <li><a href="products7.html">کلیر </a></li>
+                            <li><a href="products7.html">صحت</a></li>
+                            <li><a href="products7.html">پرژک</a></li>
+                            <li><a href="products7.html">پانتن</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 sitemap-text-grids">
+                        <h5 class="sitemap-text-title"><a href="products7.html">خمیر دندان </a></h5>
+                        <ul>
+                            <li><a href="products7.html">دارو گر </a></li>
+                            <li><a href="products7.html">کلگیت </a></li>
+                            <li><a href="products7.html">سیگنال </a></li>
+                            <li><a href="products7.html">پونه</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 sitemap-text-grids">
+                        <h5 class="sitemap-text-title"><a href="products7.html">کرم دست </a></h5>
+                        <ul>
+                            <li><a href="products7.html">نیوآ </a></li>
+                            <li><a href="products7.html">داو </a></li>
+                            <li><a href="products7.html">الارو</a></li>
+                            <li><a href="products7.html">کیو وی</a></li>
+                            <li><a href="products7.html">آرکو</a></li>
+                        </ul>
+                        <h5 class="sitemap-text-title"><a href="products7.html">صابون </a></h5>
+                        <ul>
+                            <li><a href="products7.html">داو </a></li>
+                            <li><a href="products7.html">داروگر </a></li>
+                            <li><a href="products7.html">فیروز</a></li>
+                            <li><a href="products7.html">عروس</a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+
+
+                <div class="col-md-3 sitemap-text-grids">
+                    <h5 class="sitemap-text-title"><a href="products8.html"> </a></h5>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+            <script>
+			$(document).ready(function(){
+			  // Add scrollspy to <body>
+			  $('body').scrollspy({target: ".sitemap-tabs", offset: 50});
+
+			  // Add smooth scrolling on all links inside the navbar
+			  $("#myNavbar a").on('click', function(event) {
+				// Make sure this.hash has a value before overriding default behaviour
+				if (this.hash !== "") {
+				  // Prevent default anchor click behaviour
+				  event.preventDefault();
+
+				  // Store hash
+				  var hash = this.hash;
+
+				  // Using jQuery's animate() method to add smooth page scroll
+				  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+				  $('html, body').animate({
+					scrollTop: $(hash).offset().top
+				  }, 800, function(){
+
+					// Add hash (#) to URL when done scrolling (default click behaviour)
+					window.location.hash = hash;
+				  });
+				}  // End if
+			  });
+			});
+            </script>
+            <div class="sitemap-row2  sitemap-text">
+                <h3 class="w3sitemap-title"><i class="fa fa-gears"></i>سرویس ها</h3>
+                <div class="col-md-6 sitemap-text-grids">
+                    <ul>
+                        <li><a href="darbare ma.html">درباره ما</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 sitemap-text-grids">
+                    <ul>
+                        <li><a href="signup.html">Sign Up</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="location.html">موقعیت یاب</a></li>
+
+                    </ul>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- //site map -->
+    <!-- footer-top -->
+    <div class="w3agile-ftr-top">
+        <div class="container">
+            <div class="ftr-toprow">
+                <div class="col-md-4 ftr-top-grids">
+                    <div class="ftr-top-left">
+                        <i class="fa fa-truck" aria-hidden="true"></i>
+                    </div>
+                    <div class="ftr-top-right" style="direction:rtl">
+                        <h4>تحویل در محل</h4>
+                        <p>کالای مورد نظر خود را سفارش داده و آن را درب منزل تحویل بگیرید</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="col-md-4 ftr-top-grids">
+                    <div class="ftr-top-left">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    </div>
+                    <div class="ftr-top-right">
+                        <h4>احترام به خواسته مشتری</h4>
+                        <p>اعتماد شما سرمایه ماست</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="col-md-4 ftr-top-grids">
+                    <div class="ftr-top-left">
+                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                    </div>
+                    <div class="ftr-top-right" style="direction:rtl">
+                        <h4>کیفیت مناسب</h4>
+                        <p> هدف ما تهیه کالای مورد نظر سما با بلاترین کیفیت ممکن است</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- //footer-top -->
+    <!-- subscribe -->
+    <div class="subscribe">
+        <div class="container">
+            <div class="col-md-6 social-icons w3-agile-icons">
+
+                <ul>
+                    <li><a href="#" class="fa fa-facebook icon facebook"> </a></li>
+                    <li><a href="#" class="fa fa-twitter icon twitter"> </a></li>
+                    <li><a href="#" class="fa fa-google-plus icon googleplus"> </a></li>
+                    <li><a href="#" class="fa fa-dribbble icon dribbble"> </a></li>
+                    <li><a href="#" class="fa fa-rss icon rss"> </a></li>
+                </ul>
+                <ul class="apps">
+                    <li><h4>Download Our app : </h4> </li>
+                    <li><a href="#" class="fa fa-apple"></a></li>
+                    <li><a href="#" class="fa fa-windows"></a></li>
+                    <li><a href="#" class="fa fa-android"></a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 subscribe-right">
+                <h4>بدو بیا تو</h4>
+                <form action="#" method="post">
+                    <input type="text" name="email" placeholder="Enter your Email..." required="">
+                    <input type="submit" value="Subscribe">
+                </form>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <!-- //subscribe -->
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer-info w3-agileits-info">
+                <div class="col-md-4 address-left agileinfo">
+                    <div class="footer-logo header-logo">
+                        <h4><a href="index.html"><span>اسنپ مارکت</span><i></i></a></h4>
+
+                    </div>
+                    <ul>
+                        <li><a href="about.html">درباره ما</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-8 address-right">
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- //footer -->
+    <div class="copy-right">
+        <div class="container">
+            <p></p>
+        </div>
+    </div>
+    <!-- cart-js -->
+    <script src="js/minicart.js"></script>
+    <script>
+        w3ls.render();
+
+        w3ls.cart.on('w3sb_checkout', function (evt) {
+            var items, len, i;
+
+            if (this.subtotal() > 0) {
+                items = this.items();
+
+                for (i = 0, len = items.length; i < len; i++) {
+                    items[i].set('shipping', 0);
+                    items[i].set('shipping2', 0);
+                }
+            }
+        });
+    </script>
+    <!-- //cart-js -->
+    <!-- countdown.js -->
+    <script src="js/jquery.knob.js"></script>
+    <script src="js/jquery.throttle.js"></script>
+    <script src="js/jquery.classycountdown.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#countdown1').ClassyCountdown({
+                end: '1388268325',
+                now: '1387999995',
+                labels: true,
+                style: {
+                    element: "",
+                    textResponsive: .5,
+                    days: {
+                        gauge: {
+                            thickness: .10,
+                            bgColor: "rgba(0,0,0,0)",
+                            fgColor: "#1abc9c",
+                            lineCap: 'round'
+                        },
+                        textCSS: 'font-weight:300; color:#fff;'
+                    },
+                    hours: {
+                        gauge: {
+                            thickness: .10,
+                            bgColor: "rgba(0,0,0,0)",
+                            fgColor: "#05BEF6",
+                            lineCap: 'round'
+                        },
+                        textCSS: ' font-weight:300; color:#fff;'
+                    },
+                    minutes: {
+                        gauge: {
+                            thickness: .10,
+                            bgColor: "rgba(0,0,0,0)",
+                            fgColor: "#8e44ad",
+                            lineCap: 'round'
+                        },
+                        textCSS: ' font-weight:300; color:#fff;'
+                    },
+                    seconds: {
+                        gauge: {
+                            thickness: .10,
+                            bgColor: "rgba(0,0,0,0)",
+                            fgColor: "#f39c12",
+                            lineCap: 'round'
+                        },
+                        textCSS: ' font-weight:300; color:#fff;'
+                    }
+
+                },
+                onEndCallback: function () {
+                    console.log("Time out!");
+                }
+            });
+        });
+    </script>
+    <!-- //countdown.js -->
+
+    <script src="js/jquery.menu-aim.js"> </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
